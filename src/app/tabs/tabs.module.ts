@@ -55,14 +55,14 @@ const routes: Routes = [
         },
         {
           path: '',
-          redirectTo: '../hotels',
+          redirectTo: 'hotels',
           pathMatch: 'full'
         }
       ]
   },
   {
     path: '',
-    redirectTo: '../hotels',
+    redirectTo: 'hotels',
     pathMatch: 'full'
   }
 ];
