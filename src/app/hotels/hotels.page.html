@@ -1,23 +1,43 @@
 <ion-content>
+    <ion-refresher slot="fixed" (ionRefresh)="doRefresh($event)">
+        <ion-refresher-content
+          pullingIcon="arrow-dropdown"
+          pullingText="Pull to refresh"
+          refreshingSpinner="circles"
+          refreshingText="Refreshing...">
+        </ion-refresher-content>
+      </ion-refresher>
 
-    <ion-grid>
-        <ion-row>
-            <ion-col size="6" size-lg class="card mt-1">
-              ion-col [size="6"] [size-lg] [offset="3"]
-            </ion-col>
-            <ion-col size="6" size-lg class="card  mt-1">
-              ion-col [size="3"] [size-lg]
-            </ion-col>
-          
-          <ion-col size="6" size-lg class="card  mt-1">
-              ion-col [size="6"] [size-lg] [offset="3"]
-            </ion-col>
-            <ion-col size="6" size-lg class="card  mt-1">
-              ion-col [size="3"] [size-lg]
-            </ion-col>
-          </ion-row>
-        
-    </ion-grid>
-  
+   
+      <ion-slides #mySlider (ionSlidesDidLoad)="slidesDidLoad(mySlider)" pager="true" [options]="slideOpts">
+          <ion-slide>
+          <img class="slider-image" src="../../assets/images/misc/3.jpg">
+          </ion-slide>
+          <ion-slide>
+          <img class="slider-image"  src="../../assets/images/misc/3.jpg">
+          </ion-slide>
+          <ion-slide>
+          <img class="slider-image"  src="../../assets/images/misc/3.jpg">
+          </ion-slide>
+          </ion-slides>
+
+          <ion-searchbar showCancelButton></ion-searchbar>
+
+
+    <ion-card>
+        <ion-card-header>
+            <ion-img src="../../assets/images/misc/3.jpg"></ion-img>
+          <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+          <ion-card-title>Card Title</ion-card-title>
+        </ion-card-header>
+      
+        <ion-card-content>
+           
+               
+             
+          Keep close to Nature's heart... and break clear away, once in awhile,
+          and climb a mountain or spend a week in the woods. Wash your spirit clean.
+        </ion-card-content>
+      </ion-card>
 
 </ion-content>
