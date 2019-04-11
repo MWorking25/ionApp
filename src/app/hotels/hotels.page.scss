@@ -160,3 +160,11 @@
         padding: 10px;
         font-weight: 500;
     }
+
+    .fixed-content {
+        display: inline-block;
+        width: 150px;
+        white-space: nowrap;
+        overflow: hidden !important;
+        text-overflow: ellipsis;
+    }

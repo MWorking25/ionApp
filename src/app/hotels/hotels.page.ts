@@ -2,6 +2,7 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 import { IonSlides } from '@ionic/angular';
 import { Router } from '@angular/router';
 import { HotelsService } from './hotels.service';
+import { Observable } from 'rxjs/Observable';
 @Component({
   selector: 'app-hotels',
   templateUrl: './hotels.page.html',
@@ -9,20 +10,22 @@ import { HotelsService } from './hotels.service';
 })
 export class HotelsPage implements OnInit {
 
-  cart = [];
-  items = [];
+
+  items;
  
-  sliderConfig = {
-    slidesPerView: 1.6,
-    spaceBetween: 10,
-    centeredSlides: true
-  };
 
   constructor(private router: Router, private _hotelService : HotelsService) { }
 
   ngOnInit() {
-    this.items = this._hotelService.getProducts();
-    this.cart = this._hotelService.getCart();
+    this.getItemsList();
+  }
+
+
+  getItemsList() {
+    this._hotelService.getItemsList().subscribe((res:any)=>{
+      this.items = res;
+      console.log(this.items)
+    });	
   }
 
   slideOpts= {
@@ -41,12 +44,7 @@ export class HotelsPage implements OnInit {
     }, 600);
   }
 
-  addToCart(product) {
-    this._hotelService.addProduct(product);
-  }
+
  
-  openCart() {
-    this.router.navigate(['cart']);
-  }
 
 }
