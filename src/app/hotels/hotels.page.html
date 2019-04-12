@@ -1,4 +1,4 @@
-<ion-toolbar >
+<ion-toolbar>
   <ion-searchbar></ion-searchbar>
 </ion-toolbar>
 <ion-content>
@@ -24,27 +24,90 @@
           </ion-slide>
           </ion-slides>
 
-
-          <ion-grid>
-          <ion-row>
-            <ion-col size="6" *ngFor="let obj of items">
-                <div class="row pl-1 pr-1">
-              <ion-card>
-                  <div class="row"><ion-img src="../../assets/images/misc/3.jpg" style="height:100px;width:100%;"></ion-img></div>
-                <ion-card-header>
-                  <ion-card-subtitle class="col-12 col-md-12 col-sm-12 col-lg-12 fixed-content">{{obj.name}}-{{obj.partner_reference}}</ion-card-subtitle>
-                </ion-card-header>
               
-                <ion-card-content>
-                <!-- <span class="fixed-content">{{obj.address}} {{obj.address2}}</span> -->
-                </ion-card-content>
-              </ion-card>
-              </div>
-            </ion-col>
-          </ion-row>
-          </ion-grid>
+
+          <div class="row">
+
+              <ion-list>
+                  <ion-item *ngFor="let obj of items">
+                    <div class="row">
+                        <div class="col-5 col-md-5">
+                            <div class="">
+                                <img src="../../assets/images/misc/3.jpg" class="img-fluid img-thumbnail" style="min-height:100px;max-height:100px;width: 100%;max-width: 100%;min-width: 100%;">
+                            </div>
+                        </div>
+                        <div class="col-7 col-md-7">
+                        <div class="row">
+                            <div class="col-12 col-md-12"><ion-label class="fixed-content">{{obj.name}}</ion-label></div>
+                            <div class="col-12 col-md-12"><ion-text color="medium"><p style="font-size:14px;">{{obj.partner_reference}} reviews / 4 star</p></ion-text></div>
+                        </div>
+                        </div>
+                        </div>
+                    
+                  </ion-item>
+                </ion-list>
+
+          </div>
 
 
-   
+              <!-- <ion-card *ngFor="let obj of items">
+
+                  <ion-item>
+                    <ion-avatar item-start>
+                      <img src="../../assets/images/misc/3.jpg">
+                    </ion-avatar>
+                    <h2 text-capitalize>
+                      {{obj.name}}
+                      <ion-badge>
+                        <ion-icon name="checkmark-circle"></ion-icon>
+                      </ion-badge>
+                    </h2>
+                    <p text-capitalize>
+                      {{obj.phone}}
+                    </p>
+                
+                    <button ion-button item-end clear>
+                      <ion-icon name="add-circle"></ion-icon>
+                    </button>
+                
+                    <button ion-button item-end clear>
+                      <ion-icon name="trash"></ion-icon>
+                    </button>
+                
+                    <button ion-button item-end clear>
+                      <ion-icon name="create"></ion-icon>
+                    </button>
+                
+                  </ion-item>
+                
+                  <ion-card-content>
+                    <p>{{obj.address}} {{obj.address2}}</p>
+                  </ion-card-content>
+                
+                  <ion-row>
+                    <ion-col text-left>
+                      <button ion-button icon-start clear small (click)="like(obj, $event)">
+                        <ion-icon name="happy"></ion-icon>
+                        <div>{{obj.like}}</div>
+                      </button>
+                    </ion-col>
+                
+                    <ion-col text-center>
+                      <button ion-button icon-start clear small>
+                        <ion-icon name="add"></ion-icon>
+                        <div>Ver más.</div>
+                      </button>
+                    </ion-col>
+                
+                    <ion-col text-right>
+                      <button ion-button clear small>
+                        <ion-icon name="paper-plane"></ion-icon>
+                      </button>
+                    </ion-col>
+                  </ion-row>
+                
+                </ion-card> -->
+
+
 
 </ion-content>

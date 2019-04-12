@@ -9,7 +9,9 @@ import { Observable } from 'rxjs/Observable';
   styleUrls: ['./hotels.page.scss'],
 })
 export class HotelsPage implements OnInit {
-
+  cardSettings: any = {
+    theme: 'ios'
+}
 
   items;
  
