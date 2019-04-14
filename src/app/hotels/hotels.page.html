@@ -26,29 +26,60 @@
 
               
 
-          <div class="row">
-
-              <ion-list>
-                  <ion-item *ngFor="let obj of items">
-                    <div class="row">
-                        <div class="col-5 col-md-5">
-                            <div class="">
-                                <img src="../../assets/images/misc/3.jpg" class="img-fluid img-thumbnail" style="min-height:100px;max-height:100px;width: 100%;max-width: 100%;min-width: 100%;">
-                            </div>
-                        </div>
-                        <div class="col-7 col-md-7">
+          <ion-grid>
+            <ion-row>
+              <ion-col size="12">
+                  <ion-card *ngFor="let obj of items;let i = index;">
                         <div class="row">
-                            <div class="col-12 col-md-12"><ion-label class="fixed-content">{{obj.name}}</ion-label></div>
-                            <div class="col-12 col-md-12"><ion-text color="medium"><p style="font-size:14px;">{{obj.partner_reference}} reviews / 4 star</p></ion-text></div>
+                            <img src="../../assets/images/misc/3.jpg" class="img-fluid img-thumbnail" style="min-height:150px;max-height:150px;width: 100%;max-width: 100%;min-width: 100%;">
                         </div>
-                        </div>
-                        </div>
-                    
-                  </ion-item>
-                </ion-list>
+                        
+                      <ion-item>
+                        <ion-label>{{obj.name}}</ion-label>
+                      </ion-item>
+                     
+                      <ion-card-content>
+                          <ion-fab horizontal="end" slot="fixed" style="margin-top: -105px">
+                              <ion-fab-button color="light" size="small" >
+                                  <ion-icon *ngIf="i % 2 == 1" name="heart" style="color:rgb(250, 48, 48)"></ion-icon>
+                                  <ion-icon *ngIf="i % 2 == 0" name="heart-empty"></ion-icon>
+                              </ion-fab-button>
+                            </ion-fab>
+                       {{obj.address}}{{obj.address2}},{{obj.city}}
+                      </ion-card-content>
+                      <ion-card-content>
+                        <ion-grid>
+                          <ion-row>
+                            <ion-col size="6">
+                                <ion-text color="dark">
+                                    <h5>Included in this price</h5>
+                                    <ul>
+                                      <li>Breackfast</li>
+                                      <li>WIFI</li>
+                                      <li>Swimming</li>
+                                    </ul>
+                                  </ion-text>
+                            </ion-col>
+                            <ion-col size="6" style="text-align: right">
+                                <ion-button fill="outline">{{2500 * (i+10) | currency:"₹" }}</ion-button>
+                                <ion-button fill="outline" color="danger" style="text-decoration: line-through;">{{2500 * (i+13) | currency:"₹" }}</ion-button>
+                            
+                            </ion-col>
+                          </ion-row>
+                        </ion-grid>
+                         
+                      </ion-card-content>
+                        <ion-card-header>
+                          here is footer
+                        </ion-card-header>
+                    </ion-card>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+          
 
-          </div>
 
+          
 
               <!-- <ion-card *ngFor="let obj of items">
 
