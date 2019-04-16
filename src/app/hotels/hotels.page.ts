@@ -26,7 +26,6 @@ export class HotelsPage implements OnInit {
   getItemsList() {
     this._hotelService.getItemsList().subscribe((res:any)=>{
       this.items = res;
-      console.log(this.items)
     });	
   }
 

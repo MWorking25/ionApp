@@ -17,5 +17,11 @@ export class HotelsService {
 			 				return data;
 		}));
   }
+
+   getFieldDetails(fieldid): Observable<any>{
+    return this.http.get<any>('../../assets/data.json').pipe(map(data => {
+			 				return data[fieldid];
+		}));
+  }
  
 }
