@@ -1,0 +1,81 @@
+<ion-content class="ion-container">
+
+  
+
+    <div class="waveWrapper waveAnimation">
+  
+ 
+  
+  
+    <div class="container-fluid" >
+        <div class="row">
+          <div class="col-12 col-md-12 col-sm-12" style="z-index: 99 !important;">
+            <ion-grid>
+              <ion-row>
+            <ion-col size="12" class="text-center" size-lg>
+              <h3>Application Name</h3>
+            </ion-col>
+            <ion-col size="12" size-lg>
+            <form class="example-form">
+                <mat-form-field class="full-width">
+                    <input matInput placeholder="Full Name">
+                    <mat-icon  matSuffix></mat-icon>
+                </mat-form-field>
+                <mat-form-field class="full-width">
+                    <input matInput placeholder="Email ID">
+                    <mat-icon  matSuffix></mat-icon>
+                </mat-form-field>
+                <mat-form-field class="full-width">
+                    <input matInput placeholder="Mobile No.">
+                    <mat-icon  matSuffix></mat-icon>
+                </mat-form-field>
+              
+                <mat-form-field class="full-width">
+                <input matInput placeholder="Username">
+                <mat-icon  matSuffix></mat-icon>
+                </mat-form-field>
+        
+                <mat-form-field class="full-width ">
+                  <input type="password" matInput placeholder="Password">
+                  <mat-icon id="passwordvisibility" class="showhidepassword" matSuffix>visibility</mat-icon>
+                </mat-form-field>
+        
+                <div class="row p-2">
+                    <button mat-raised-button class="full-width p-1 signin-btn" routerLink="tabs" routerLinkActive="active" color="primary">Sign Up</button>
+                </div>
+                <ion-grid class="p-1">
+                    <ion-row>
+                      <ion-col size="6" class="text-center">
+                            <ion-button fill="outline"><i class="fa fa-facebook" aria-hidden="true"></i>&nbsp;Facebook</ion-button>
+                        </ion-col>
+                        <ion-col size="6" class="text-center">
+                          <ion-button fill="outline"  color="danger"><i class="fa fa-google-plus" aria-hidden="true"></i>&nbsp;Google</ion-button>
+                        </ion-col>
+                        
+                      <ion-col  size="12" size-lg size-lg class="text-nowrap text-center" (click)='signin()'>
+                          <label class="anchoreffect">Already User? Sign In</label>
+                      </ion-col>
+                </ion-row>
+            </ion-grid>  
+                            
+              </form>
+            </ion-col>
+            </ion-row>
+          </ion-grid>
+    
+          </div>
+        </div>
+      </div>
+  
+  
+      <div class="waveWrapperInner bgTop">
+          <div class="wave waveTop" style="background-image: url('../../assets/images/home/wave-top.png')"></div>
+        </div>
+        <div class="waveWrapperInner bgMiddle">
+          <div class="wave waveMiddle" style="background-image: url('../../assets/images/home/wave-mid.png')"></div>
+        </div>
+        <div class="waveWrapperInner bgBottom">
+          <div class="wave waveBottom" style="background-image: url('../../assets/images/home/wave-bot.png')"></div>
+        </div>
+      </div> 
+  </ion-content>

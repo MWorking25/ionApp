@@ -1,0 +1,76 @@
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+.anchoreffect
+{
+    cursor: pointer;
+    color: grey;
+    font-size: 14px;
+}
+.showhidepassword
+{
+    cursor: pointer;
+    color: grey;
+    font-size: 20px;
+}
+.setBtn {
+  margin-top: 20px;
+}
+.blue_white_btn {
+  font-size: 16.5px;
+  height: 51px;
+  margin: 0;
+  background: #ffffff;
+  color: #3C589E;
+}
+
+.blue_white_btn.button-outline-ios {
+  border-color: #3C589E;
+}
+
+.blue_white_btn.button-outline-md {
+  border-color: #3C589E;
+  margin: 0px;
+  border-radius: 4px;
+}
+
+.blue_white_btn:hover {
+  background: #ffffff !important;
+}
+
+.blue_white_btn:focus {
+  box-shadow: none;
+  background: #ffffff !important;
+  color: #3C589E;
+}
+
+.red_white_btn {
+  font-size: 16.5px;
+  height: 51px;
+  margin: 0;
+  background: #ffffff;
+  color: #E33F2E;
+}
+
+.red_white_btn.button-outline-ios {
+  border-color: #E33F2E;
+}
+
+.red_white_btn.button-outline-md {
+  border-color: #E33F2E;
+  margin: 0px;
+  border-radius: 4px;
+}
+
+.red_white_btn:hover {
+  background: #ffffff !important;
+}
+
+.red_white_btn:focus {
+  box-shadow: none;
+  background: #ffffff !important;
+  color: #E33F2E;
+}

@@ -1,0 +1,28 @@
+<ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-back-button defaultHref="home"
+        [icon]="buttonIcon"></ion-back-button>
+      </ion-buttons>
+      
+    </ion-toolbar>
+  </ion-header>
+<ion-content>
+  <ion-grid class="mt-4"> 
+    <ion-row>
+      <ion-col size="12">
+          <ion-text><h4>Verify your account</h4></ion-text>
+          <ion-text><p>Enter OTP sent to your registered email id and proceed to reset password</p></ion-text>
+      </ion-col>
+      <ion-col size="12">
+          <mat-form-field class="full-width">
+              <input matInput placeholder="Enter OTP">
+              <mat-icon id="passwordvisibility" matSuffix></mat-icon>
+              </mat-form-field>
+      </ion-col>
+      <ion-col size="12">
+          <button mat-raised-button class="full-width p-1" routerLink="resetPassword" routerLinkActive="active" color="primary">SUBMIT</button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

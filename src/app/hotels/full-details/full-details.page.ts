@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from "@angular/router";
+import { ActivatedRoute,Router } from "@angular/router";
 import { HotelsService } from '../hotels.service';
 import { IonSlides } from '@ionic/angular';
+
 import { Observable } from 'rxjs';
 @Component({
   selector: 'app-full-details',
@@ -12,7 +13,7 @@ export class FullDetailsPage implements OnInit {
 
   fieldid;
   fielddetails;
-  constructor(private route: ActivatedRoute, private _hotelService : HotelsService) { }
+  constructor(private route: ActivatedRoute, private router: Router, private _hotelService : HotelsService) { }
 
   ngOnInit() {
     this.route.paramMap.subscribe(params => {
@@ -36,4 +37,5 @@ export class FullDetailsPage implements OnInit {
     slides.startAutoplay();
     }
 
+    
 }

@@ -4,6 +4,41 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content padding>
+    <ion-card class="fullCard">
+        <img class="userImg" src="../../assets/images/home/user.svg" />
+        <ion-card-content>
+          <ion-row>
+            <ion-col col-12 class="name">Mansi Ajgaonkar<span *ngIf="data?.middleName">&nbsp;</span>{{data?.middleName}}<span *ngIf="data?.lastName">&nbsp;</span>{{data?.lastName}}</ion-col>
+          </ion-row>
+        
+    
+          <ion-row class="rowPadd" style="margin-top: 20px;">
+            <ion-col col-4 class="textLeft">
+              <p>Email Id: </p>
+            </ion-col>
+            <ion-col col-8 class="textRight">
+              <p>aj.mansi2025@gmail.com</p>
+            </ion-col>
+          </ion-row>
+    
+          <ion-row class="rowPadd">
+            <ion-col col-4 class="textLeft">
+              <p>Mobile No.: </p>
+            </ion-col>
+            <ion-col col-8 class="textRight">
+              <p>+91-9757348045</p>
+            </ion-col>
+          </ion-row>
+    
+          <ion-row *ngIf="gmailOrFBLogin == 'false'" class="signout" (click)="gotoChangePassword()">
+            <p>Change Password</p>
+            <p class="logo">
+              <img src="assets/icon/arrow.png">
+            </p>
+          </ion-row>
+    
+        </ion-card-content>
+      </ion-card>
 
 </ion-content>

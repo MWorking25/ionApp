@@ -1,0 +1,102 @@
+.name{
+    font-family: "OpenSans-Bold";
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+  }
+  .changepassword,
+  .signout {
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+    justify-content: center;
+  }
+  
+  .signout p{
+    font-family: "OpenSans-Regular";
+    color: orangered;    
+  }
+  [col-4]{
+    color: #616161;
+  }
+  [col-8]{
+    color:#303030;
+    font-family: "OpenSans-Semibold";
+  }
+  
+  .logo img {
+    padding-top: 1px;
+  }
+  .fullCard {
+    box-shadow: 0px 0px 1px #b1b1b1;
+    border-radius: 5px;
+    width: 95% !important;
+    height: 75% !important;
+  }
+  ion-card-content {
+    text-align: center;
+  }
+  .userImg {
+    width: 165px;
+    margin: auto;
+    margin-top: 50px;
+  }
+  .textRight {
+    text-align: right;
+  }
+  .textLeft {
+    text-align: left;
+  }
+  
+  .rowPadd{
+    padding: 7px 0;
+    font-family: "OpenSans-Regular";
+  }
+
+  @media only screen and (min-device-width:320px) and (max-device-width:360px) {
+    .rowPadd p{
+      font-size: 14px;
+    }
+    .userImg{
+      width: 95px;
+    }
+    .signout p{
+      font-size: 14px;
+    }
+    .logo img {
+      width: 6px;
+      margin-left: 11px;
+    }
+  }
+
+  @media only screen and (min-device-width:360px) and (max-device-width:410px) {
+    .rowPadd p{
+      font-size: 16px;
+    }
+    .userImg{
+      width: 105px;
+    }
+    .signout p{
+      font-size: 15px;
+    }
+    .logo img {
+      width: 7px;
+      margin-left: 14px;
+    }
+  }
+
+  @media only screen and (min-device-width:410px) {
+    .rowPadd p{
+      font-size: 16px;
+    }
+    .userImg{
+      width: 125px;
+    }
+    .signout p{
+      font-size: 17px;
+    }
+    .logo img {
+      width: 8px;
+      margin-left: 15px;
+    }
+  }
