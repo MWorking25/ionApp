@@ -29,17 +29,18 @@
           <ion-grid>
             <ion-row>
               <ion-col size="12">
-                  <ion-card *ngFor="let obj of items;let i = index;">
+                  <ion-card *ngFor="let obj of items;let i = index;" [routerLink]="['description',i]" routerLinkActive="active">
                         <div class="row">
                             <img src="../../assets/images/misc/3.jpg" class="img-fluid img-thumbnail" style="min-height:150px;max-height:150px;width: 100%;max-width: 100%;min-width: 100%;">
                         </div>
                         
                       <ion-item>
                         <ion-label>{{obj.name}}</ion-label>
+                        <ion-label slot="end" class="text-right"><span *ngFor="let stars of [1,2,3,4,5]"><i class="fa fa-star" *ngIf="stars <= 3" style="color:goldenrod" aria-hidden="true"></i><i class="fa fa-star-o" *ngIf="stars > 3" aria-hidden="true"></i></span></ion-label>
                       </ion-item>
                      
                       <ion-card-content>
-                          <ion-fab horizontal="end" slot="fixed" style="margin-top: -99px">
+                          <ion-fab horizontal="end" slot="fixed" style="margin-top: -97px">
                               <ion-fab-button color="light" size="small" >
                                   <ion-icon *ngIf="i % 2 == 1" name="heart" style="color:rgb(250, 48, 48)"></ion-icon>
                                   <ion-icon *ngIf="i % 2 == 0" name="heart-empty"></ion-icon>
@@ -70,7 +71,7 @@
                          
                       </ion-card-content>
                         <ion-card-header>
-                          here is footer
+                          {{ 30 * (i +12.5)}} reviews for this.
                         </ion-card-header>
                     </ion-card>
               </ion-col>
