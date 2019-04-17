@@ -1,8 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute,Router } from "@angular/router";
 import { HotelsService } from '../hotels.service';
-import { IonSlides } from '@ionic/angular';
-
+import { IonSlides, ModalController } from '@ionic/angular';
 import { Observable } from 'rxjs';
 @Component({
   selector: 'app-full-details',
@@ -26,7 +25,6 @@ export class FullDetailsPage implements OnInit {
   {
     this._hotelService.getFieldDetails(fieldid).subscribe((res:any)=>{
       this.fielddetails = res;
-      console.log(this.fielddetails)
     });	
   }
 
@@ -37,5 +35,8 @@ export class FullDetailsPage implements OnInit {
     slides.startAutoplay();
     }
 
-    
+    facilities()
+    {
+      this.router.navigate(['/facilitiestry',{item:this.fieldid}])
+    } 
 }
