@@ -39,7 +39,7 @@
           <ion-grid>
             <ion-row>
               <ion-col size="12">
-                  <ion-card *ngFor="let obj of items;let i = index;" [routerLink]="['description',i]" routerLinkActive="active">
+                  <ion-card *ngFor="let obj of items;let i = index;"(click)="goToDescription(i)">
                         <div class="row">
                             <img src="../../assets/images/misc/3.jpg" class="img-fluid img-thumbnail" style="min-height:150px;max-height:150px;width: 100%;max-width: 100%;min-width: 100%;">
                         </div>

@@ -5,15 +5,14 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { IonicModule } from '@ionic/angular';
 
-import { FullDetailsPage } from './full-details.page';
+import { FacilitiestryPage } from './facilitiestry.page';
 
 const routes: Routes = [
   {
     path: '',
-    component: FullDetailsPage
+    component: FacilitiestryPage
   },
-  { path: 'facilitiestry/:id', loadChildren: '../../facilitiestry/facilitiestry.module#FacilitiestryPageModule', pathMatch: 'full' },
-
+  
 ];
 
 @NgModule({
@@ -23,6 +22,6 @@ const routes: Routes = [
     IonicModule,
     RouterModule.forChild(routes)
   ],
-  declarations: [FullDetailsPage]
+  declarations: [FacilitiestryPage]
 })
-export class FullDetailsPageModule {}
+export class FacilitiestryPageModule {}

@@ -5,9 +5,13 @@ const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'home', loadChildren: './home/home.module#HomePageModule' },
   { path: 'home/tabs', loadChildren: './tabs/tabs.module#TabsPageModule' },
-  { path: 'full-details', loadChildren: './hotels/full-details/full-details.module#FullDetailsPageModule' },
-  { path: 'description', loadChildren: './description/description.module#DescriptionPageModule' },
-  { path: 'facilities', loadChildren: './hotels/full-details/facilities/facilities.module#FacilitiesPageModule' },
+  { path: 'description/:id', loadChildren: './hotels/full-details/full-details.module#FullDetailsPageModule' },
+  { path: 'forgetpassword', loadChildren: './forgetpassword/forgetpassword.module#ForgetpasswordPageModule' },
+  { path: 'signup', loadChildren: './signup/signup.module#SignupPageModule' },
+  { path: 'profile', loadChildren: './profile/profile.module#ProfilePageModule' },
+  { path: 'facilitiestry/:id', loadChildren: './facilitiestry/facilitiestry.module#FacilitiestryPageModule' },
+
+
 ];
 
 @NgModule({

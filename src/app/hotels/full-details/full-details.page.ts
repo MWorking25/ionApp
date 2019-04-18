@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from "@angular/router";
+import { ActivatedRoute,Router } from "@angular/router";
 import { HotelsService } from '../hotels.service';
 import { IonSlides, ModalController } from '@ionic/angular';
 import { Observable } from 'rxjs';
@@ -14,7 +14,7 @@ export class FullDetailsPage implements OnInit {
 
   fieldid;
   fielddetails;
-  constructor(private route: ActivatedRoute, private _hotelService : HotelsService, public modalController: ModalController) { }
+  constructor(private route: ActivatedRoute, private router: Router, private _hotelService : HotelsService) { }
 
   ngOnInit() {
     this.route.paramMap.subscribe(params => {
@@ -27,7 +27,6 @@ export class FullDetailsPage implements OnInit {
   {
     this._hotelService.getFieldDetails(fieldid).subscribe((res:any)=>{
       this.fielddetails = res;
-      console.log(this.fielddetails)
     });	
   }
 
@@ -39,12 +38,9 @@ export class FullDetailsPage implements OnInit {
     }
 
 
-    async presentModal() {
-      const modal = await this.modalController.create({
-        component: FacilitiesPage,
-        componentProps: { value: 123 }
-      });
-      return await modal.present();
-    }
+    facilities()
+    {
+      this.router.navigate(['/facilitiestry',this.fieldid])
+    } 
 
 }

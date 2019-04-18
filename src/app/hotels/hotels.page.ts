@@ -45,7 +45,10 @@ export class HotelsPage implements OnInit {
     }, 600);
   }
 
-
+  goToDescription(fieldid)
+  {
+    this.router.navigate(['/description',fieldid])
+  } 
  
 
 }
