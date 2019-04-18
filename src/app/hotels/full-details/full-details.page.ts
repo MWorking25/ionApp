@@ -1,8 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from "@angular/router";
 import { HotelsService } from '../hotels.service';
-import { IonSlides } from '@ionic/angular';
+import { IonSlides, ModalController } from '@ionic/angular';
 import { Observable } from 'rxjs';
+import { FacilitiesPage } from './facilities/facilities.page';
+
 @Component({
   selector: 'app-full-details',
   templateUrl: './full-details.page.html',
@@ -12,7 +14,7 @@ export class FullDetailsPage implements OnInit {
 
   fieldid;
   fielddetails;
-  constructor(private route: ActivatedRoute, private _hotelService : HotelsService) { }
+  constructor(private route: ActivatedRoute, private _hotelService : HotelsService, public modalController: ModalController) { }
 
   ngOnInit() {
     this.route.paramMap.subscribe(params => {
@@ -34,6 +36,15 @@ export class FullDetailsPage implements OnInit {
     };
     slidesDidLoad(slides:IonSlides) {
     slides.startAutoplay();
+    }
+
+
+    async presentModal() {
+      const modal = await this.modalController.create({
+        component: FacilitiesPage,
+        componentProps: { value: 123 }
+      });
+      return await modal.present();
     }
 
 }
