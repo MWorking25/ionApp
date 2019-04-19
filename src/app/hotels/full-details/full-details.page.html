@@ -54,7 +54,7 @@
                     </ion-col>
                 <ion-col size="3">
                     <ion-fab>
-                        <ion-fab-button color="light" size="large" >
+                        <ion-fab-button color="light" (click)="openNewScreen('/hotelphotos')" size="large" >
                             <ion-icon name="images"></ion-icon>
                         </ion-fab-button>
                         <ion-label class="mt-2">Photos</ion-label><br>
@@ -63,7 +63,7 @@
                     </ion-col>
                 <ion-col size="3">
                     <ion-fab>
-                        <ion-fab-button color="light" size="large" >
+                        <ion-fab-button color="light" (click)="openNewScreen('/hotelreview')" size="large" >
                             <ion-icon name="thumbs-up"></ion-icon>
                         </ion-fab-button>
                         <ion-label class="mt-2">Reviews</ion-label><br>
@@ -72,7 +72,7 @@
                     </ion-col>
                 <ion-col size="3">
                     <ion-fab>
-                        <ion-fab-button color="light"  (click)="facilities()" size="large" >
+                        <ion-fab-button color="light"  (click)="openNewScreen('/facilitiestry')" size="large" >
                             <ion-icon name="bed"></ion-icon>
                         </ion-fab-button>
                         <ion-label class="mt-2">Facilities</ion-label><br>
@@ -82,29 +82,23 @@
                   </ion-row>
                   </ion-grid>
           </ion-col>
-          
-          <ion-col size="12" class="mt-4 pt-4">
-              <ion-item>
-          <ion-col size="7">
-              <ion-text color="dark">
-                  <h5>Included in this price</h5>
-                  <ul>
-                    <li>Breackfast</li>
-                    <li>WIFI</li>
-                    <li>Swimming</li>
-                  </ul>
-                </ion-text>
-          </ion-col>
-          <ion-col size="5" style="text-align: right">
-            <div class="mt-3">
-              <ion-button fill="outline">{{2500 * (fieldid+10) | currency:"₹" }}</ion-button>
-              <ion-button fill="outline" color="danger" style="text-decoration: line-through;">{{2500 * (fieldid+13) | currency:"₹" }}</ion-button>
-            </div>
-          </ion-col>
-        </ion-item>
-        </ion-col>
       </ion-row>
   </ion-grid>
 
+
+  <ion-tabs>
+
+    <ion-tab-bar slot="bottom" color="dark">
+      
+      <ion-tab-button>
+        <ion-label class="mr-auto" color="light"><p  style="text-decoration: line-through;">{{2500 * (fieldid+13) | currency:"₹" }}</p></ion-label>
+        <ion-label class="mr-auto" color="light"><h1>{{2500 * (fieldid+10) | currency:"₹" }}</h1></ion-label>
+      </ion-tab-button>
+      <ion-tab-button>
+        <ion-button expand="full" fill="outline">Book Now</ion-button>
+      </ion-tab-button>
+    </ion-tab-bar>
+
+  </ion-tabs>
 
 </ion-content>

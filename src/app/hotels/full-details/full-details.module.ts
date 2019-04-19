@@ -21,8 +21,9 @@ const routes: Routes = [
     CommonModule,
     FormsModule,
     IonicModule,
-    RouterModule.forChild(routes)
+    RouterModule.forChild(routes),
   ],
-  declarations: [FullDetailsPage]
+  declarations: [FullDetailsPage],
+  entryComponents: []
 })
 export class FullDetailsPageModule {}

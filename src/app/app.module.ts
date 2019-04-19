@@ -19,10 +19,12 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
+import { HotelreviewsComponent } from './hotelreviews/hotelreviews.component';
+import { HotelphotosComponent } from './hotelphotos/hotelphotos.component';
+import { FullscreenimgComponent } from './hotelphotos/fullscreenimg/fullscreenimg.component';
 @NgModule({
-  declarations: [AppComponent],
-  entryComponents: [],
+  declarations: [AppComponent,HotelreviewsComponent,HotelphotosComponent,FullscreenimgComponent],
+  entryComponents: [FullscreenimgComponent],
   imports: [ 
     FormsModule, 
     BrowserModule, IonicModule.forRoot(), AppRoutingModule, BrowserAnimationsModule,MatAutocompleteModule,

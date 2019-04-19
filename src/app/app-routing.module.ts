@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
+import { HotelreviewsComponent } from './hotelreviews/hotelreviews.component';
+import { HotelphotosComponent } from './hotelphotos/hotelphotos.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -10,6 +12,8 @@ const routes: Routes = [
   { path: 'signup', loadChildren: './signup/signup.module#SignupPageModule' },
   { path: 'profile', loadChildren: './profile/profile.module#ProfilePageModule' },
   { path: 'facilitiestry/:id', loadChildren: './facilitiestry/facilitiestry.module#FacilitiestryPageModule' },
+  { path: 'hotelreview/:id', component:HotelreviewsComponent },
+  { path: 'hotelphotos/:id', component:HotelphotosComponent },
 
 
 ];

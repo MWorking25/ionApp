@@ -1,0 +1,38 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-icon name="close" (click)="backClicked()" slot="start" class="ml-3 mediumicon" ></ion-icon>
+        <ion-title>REVIEWS</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content>
+
+    <ion-grid>
+      <ion-row>
+        <ion-col size="3" class="text-nowrap">
+            <ion-button color="warning">
+                <ion-icon slot="start" name="star"></ion-icon>  5.0
+            </ion-button>
+        </ion-col>
+        <ion-col size="9" class="text-nowrap mt-1">
+            <ion-text><p>Overall reviews from all users.</p></ion-text>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+    <ion-list>
+        <ion-item *ngFor='let _reviews of reviews'>
+            <ion-grid>
+              <ion-row>
+                <ion-col size="3" style="white-space: nowrap;">
+                    <!-- <img src="../../assets/images/icons/{{_reviews.}}.png"> -->
+                </ion-col>
+                <ion-col size="9">
+                  <ion-text class="mediumtext text-left"><p>{{_amenities.header}}</p></ion-text>
+                </ion-col>
+              </ion-row>
+            </ion-grid>
+          </ion-item>
+    </ion-list>
+  </ion-content>
+  

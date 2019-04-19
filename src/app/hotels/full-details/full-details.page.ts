@@ -1,9 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute,Router } from "@angular/router";
 import { HotelsService } from '../hotels.service';
-import { IonSlides, ModalController } from '@ionic/angular';
+import { IonSlides  } from '@ionic/angular';
 import { Observable } from 'rxjs';
-import { FacilitiesPage } from './facilities/facilities.page';
 
 @Component({
   selector: 'app-full-details',
@@ -13,15 +12,20 @@ import { FacilitiesPage } from './facilities/facilities.page';
 export class FullDetailsPage implements OnInit {
 
   fieldid;
-  fielddetails;
+  fielddetails:any = [];
   constructor(private route: ActivatedRoute, private router: Router, private _hotelService : HotelsService) { }
 
   ngOnInit() {
     this.route.paramMap.subscribe(params => {
       this.fieldid = params.get("id");
       this.getFulldescription(this.fieldid);
-    })
+    });
+
+
+ 
   }
+
+
 
   getFulldescription(fieldid)
   {
@@ -38,9 +42,13 @@ export class FullDetailsPage implements OnInit {
     }
 
 
-    facilities()
+    openNewScreen(path)
     {
-      this.router.navigate(['/facilitiestry',this.fieldid])
+      this.router.navigate([path,this.fieldid])
     } 
 
+   
+
 }
+
+
