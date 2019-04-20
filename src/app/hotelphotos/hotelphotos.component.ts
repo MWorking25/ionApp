@@ -3,6 +3,7 @@ import { ActivatedRoute,Router } from "@angular/router";
 import { ModalController } from '@ionic/angular';
 import {Location} from '@angular/common';
 import { FullscreenimgComponent } from './fullscreenimg/fullscreenimg.component';
+import { PhotoViewer } from '@ionic-native/photo-viewer/ngx';
 @Component({
   selector: 'app-hotelphotos',
   templateUrl: './hotelphotos.component.html',
@@ -14,7 +15,7 @@ export class HotelphotosComponent implements OnInit {
 
   photos:any = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30];
 
-  constructor(private route: ActivatedRoute, private router: Router, private _location: Location, private modalController: ModalController) { }
+  constructor(private route: ActivatedRoute, private router: Router, private _location: Location, private modalController: ModalController, private photoViewer: PhotoViewer) { }
 
   ngOnInit() {
     this.route.paramMap.subscribe(params => {
@@ -28,14 +29,16 @@ export class HotelphotosComponent implements OnInit {
   }
 
   openPreview(img) {
-    this.modalController.create({
-      component: FullscreenimgComponent,
-      componentProps: {
-        img: img
-      }
-    }).then(modal => {
-      modal.present();
-    });
+    this.photoViewer.show('http://103.252.7.5:8897/uploads/userprofile.jpg', 'My image title');
+
+    // this.modalController.create({
+    //   component: FullscreenimgComponent,
+    //   componentProps: {
+    //     img: img
+    //   }
+    // }).then(modal => {
+    //   modal.present();
+    // });
   }
 
 }

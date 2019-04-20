@@ -1,0 +1,4 @@
+#Sat Apr 20 14:29:41 IST 2019
+base.0=D\:\\Mayur 23-7-18\\2019\\IONIC\\application\\platforms\\android\\app\\build\\intermediates\\transforms\\dex\\release\\0
+path.0=classes.dex
+renamed.0=classes.dex

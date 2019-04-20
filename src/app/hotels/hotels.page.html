@@ -9,7 +9,19 @@
   </ion-toolbar>
 </ion-header>
 <ion-toolbar>
-  <ion-searchbar></ion-searchbar>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="10">
+          <ion-searchbar></ion-searchbar>
+      </ion-col>
+      <ion-col size="2">
+          <ion-button fill="outline" class="mt-2"  color="medium">
+              <ion-icon name="options"></ion-icon>
+          </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  
 </ion-toolbar>
 <ion-content>
     <ion-refresher slot="fixed" (ionRefresh)="doRefresh($event)">
@@ -39,7 +51,7 @@
           <ion-grid>
             <ion-row>
               <ion-col size="12">
-                  <ion-card *ngFor="let obj of items;let i = index;"(click)="goToDescription(i)">
+                  <ion-card *ngFor="let obj of items;let i = index;"(click)="redirectionToUrl('/description', i)">
                         <div class="row">
                             <img src="../../assets/images/misc/3.jpg" class="img-fluid img-thumbnail" style="min-height:150px;max-height:150px;width: 100%;max-width: 100%;min-width: 100%;">
                         </div>
@@ -56,7 +68,7 @@
                                   <ion-icon *ngIf="i % 2 == 0" name="heart-empty"></ion-icon>
                               </ion-fab-button>
                             </ion-fab>
-                       {{obj.address}}{{obj.address2}},{{obj.city}}
+                       {{obj.address}}, {{obj.state}}
                       </ion-card-content>
                       <ion-card-content>
                         <ion-grid>

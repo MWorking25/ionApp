@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouteReuseStrategy } from '@angular/router';
 import { HttpClientModule} from '@angular/common/http';
+import { PhotoViewer } from '@ionic-native/photo-viewer/ngx';
 import {
   MatAutocompleteModule, MatBadgeModule, MatBottomSheetModule, MatButtonModule,
   MatButtonToggleModule, MatCardModule, MatCheckboxModule, MatChipsModule, MatDatepickerModule,
@@ -104,6 +105,7 @@ import { FullscreenimgComponent } from './hotelphotos/fullscreenimg/fullscreenim
   providers: [
     StatusBar,
     SplashScreen,
+    PhotoViewer,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
   ],
   bootstrap: [AppComponent]
