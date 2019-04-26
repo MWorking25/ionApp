@@ -106,7 +106,7 @@ var TabsPageModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<ion-content>\n  <ion-tabs>\n\n    <ion-tab-bar slot=\"bottom\" color=\"primary\">\n      <ion-tab-button tab=\"hotels\">\n        <ion-icon name=\"bed\"></ion-icon>\n        <ion-label>Hotels</ion-label>\n      </ion-tab-button>\n\n      <ion-tab-button tab=\"restro\">\n        <ion-icon name=\"pizza\"></ion-icon>\n        <ion-label>Food</ion-label>\n      </ion-tab-button>\n\n      <ion-tab-button tab=\"journey\">\n        <ion-icon name=\"bus\"></ion-icon>\n        <ion-label>Tours</ion-label>\n      </ion-tab-button>\n\n      <ion-tab-button tab=\"profile\">\n        <ion-icon name=\"contact\"></ion-icon>\n        <ion-label>Profile</ion-label>\n      </ion-tab-button>\n    </ion-tab-bar>\n\n  </ion-tabs>\n\n\n\n</ion-content>"
+module.exports = "<ion-content>\n  <ion-tabs>\n\n    <ion-tab-bar slot=\"bottom\" color=\"primary\">\n      <ion-tab-button tab=\"hotels\">\n        <ion-icon name=\"bed\"></ion-icon>\n        <ion-label>Hotels</ion-label>\n      </ion-tab-button>\n\n      <ion-tab-button tab=\"restro\">\n        <ion-icon name=\"boat\"></ion-icon>\n        <ion-label>Experiences</ion-label>\n      </ion-tab-button>\n\n      <ion-tab-button tab=\"journey\">\n        <ion-icon name=\"bus\"></ion-icon>\n        <ion-label>Tours</ion-label>\n      </ion-tab-button>\n\n      <ion-tab-button tab=\"profile\">\n        <ion-icon name=\"contact\"></ion-icon>\n        <ion-label>Profile</ion-label>\n      </ion-tab-button>\n    </ion-tab-bar>\n\n  </ion-tabs>\n\n\n\n</ion-content>"
 
 /***/ }),
 
