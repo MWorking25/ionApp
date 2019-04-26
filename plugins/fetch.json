@@ -56,5 +56,15 @@
     },
     "is_top_level": true,
     "variables": {}
+  },
+  "cordova-plugin-googleplus": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-googleplus"
+    },
+    "is_top_level": true,
+    "variables": {
+      "REVERSED_CLIENT_ID": "845071957408-8k6u4rltj129t4usr78cftak4d82nkg2.apps.googleusercontent.com"
+    }
   }
 }

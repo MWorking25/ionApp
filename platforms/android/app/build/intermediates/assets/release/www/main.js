@@ -998,25 +998,41 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _ionic_angular__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @ionic/angular */ "./node_modules/@ionic/angular/dist/fesm5.js");
 /* harmony import */ var _ionic_native_splash_screen_ngx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @ionic-native/splash-screen/ngx */ "./node_modules/@ionic-native/splash-screen/ngx/index.js");
 /* harmony import */ var _ionic_native_status_bar_ngx__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @ionic-native/status-bar/ngx */ "./node_modules/@ionic-native/status-bar/ngx/index.js");
+/* harmony import */ var _ionic_native_google_plus_ngx__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @ionic-native/google-plus/ngx */ "./node_modules/@ionic-native/google-plus/ngx/index.js");
+
 
 
 
 
 
 var AppComponent = /** @class */ (function () {
-    function AppComponent(platform, splashScreen, statusBar) {
+    function AppComponent(platform, splashScreen, statusBar, googlePlus) {
         this.platform = platform;
         this.splashScreen = splashScreen;
         this.statusBar = statusBar;
+        this.googlePlus = googlePlus;
         this.initializeApp();
     }
     AppComponent.prototype.initializeApp = function () {
         var _this = this;
         this.platform.ready().then(function () {
+            _this.googlePlus.trySilentLogin({
+                'scopes': '',
+                'webClientId': 'webClientId.apps.googleusercontent.com',
+                'offline': true
+            })
+                .then(function (data) {
+                console.log(data);
+            }, function (error) {
+                console.log(error);
+            });
             _this.statusBar.styleDefault();
-            _this.splashScreen.hide();
         });
     };
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewChild"])(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewChild"]),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", _angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewChild"])
+    ], AppComponent.prototype, "nav", void 0);
     AppComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
             selector: 'app-root',
@@ -1024,7 +1040,8 @@ var AppComponent = /** @class */ (function () {
         }),
         tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_ionic_angular__WEBPACK_IMPORTED_MODULE_2__["Platform"],
             _ionic_native_splash_screen_ngx__WEBPACK_IMPORTED_MODULE_3__["SplashScreen"],
-            _ionic_native_status_bar_ngx__WEBPACK_IMPORTED_MODULE_4__["StatusBar"]])
+            _ionic_native_status_bar_ngx__WEBPACK_IMPORTED_MODULE_4__["StatusBar"],
+            _ionic_native_google_plus_ngx__WEBPACK_IMPORTED_MODULE_5__["GooglePlus"]])
     ], AppComponent);
     return AppComponent;
 }());
@@ -1050,16 +1067,18 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
 /* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
 /* harmony import */ var _ionic_native_photo_viewer_ngx__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @ionic-native/photo-viewer/ngx */ "./node_modules/@ionic-native/photo-viewer/ngx/index.js");
-/* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm5/material.es5.js");
-/* harmony import */ var _ionic_angular__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @ionic/angular */ "./node_modules/@ionic/angular/dist/fesm5.js");
-/* harmony import */ var _ionic_native_splash_screen_ngx__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @ionic-native/splash-screen/ngx */ "./node_modules/@ionic-native/splash-screen/ngx/index.js");
-/* harmony import */ var _ionic_native_status_bar_ngx__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @ionic-native/status-bar/ngx */ "./node_modules/@ionic-native/status-bar/ngx/index.js");
-/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
-/* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./app-routing.module */ "./src/app/app-routing.module.ts");
-/* harmony import */ var _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @angular/platform-browser/animations */ "./node_modules/@angular/platform-browser/fesm5/animations.js");
-/* harmony import */ var _hotelreviews_hotelreviews_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./hotelreviews/hotelreviews.component */ "./src/app/hotelreviews/hotelreviews.component.ts");
-/* harmony import */ var _hotelphotos_hotelphotos_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./hotelphotos/hotelphotos.component */ "./src/app/hotelphotos/hotelphotos.component.ts");
-/* harmony import */ var _hotelphotos_fullscreenimg_fullscreenimg_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./hotelphotos/fullscreenimg/fullscreenimg.component */ "./src/app/hotelphotos/fullscreenimg/fullscreenimg.component.ts");
+/* harmony import */ var _ionic_native_google_plus_ngx__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @ionic-native/google-plus/ngx */ "./node_modules/@ionic-native/google-plus/ngx/index.js");
+/* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm5/material.es5.js");
+/* harmony import */ var _ionic_angular__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @ionic/angular */ "./node_modules/@ionic/angular/dist/fesm5.js");
+/* harmony import */ var _ionic_native_splash_screen_ngx__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @ionic-native/splash-screen/ngx */ "./node_modules/@ionic-native/splash-screen/ngx/index.js");
+/* harmony import */ var _ionic_native_status_bar_ngx__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @ionic-native/status-bar/ngx */ "./node_modules/@ionic-native/status-bar/ngx/index.js");
+/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
+/* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./app-routing.module */ "./src/app/app-routing.module.ts");
+/* harmony import */ var _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! @angular/platform-browser/animations */ "./node_modules/@angular/platform-browser/fesm5/animations.js");
+/* harmony import */ var _hotelreviews_hotelreviews_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./hotelreviews/hotelreviews.component */ "./src/app/hotelreviews/hotelreviews.component.ts");
+/* harmony import */ var _hotelphotos_hotelphotos_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./hotelphotos/hotelphotos.component */ "./src/app/hotelphotos/hotelphotos.component.ts");
+/* harmony import */ var _hotelphotos_fullscreenimg_fullscreenimg_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./hotelphotos/fullscreenimg/fullscreenimg.component */ "./src/app/hotelphotos/fullscreenimg/fullscreenimg.component.ts");
+
 
 
 
@@ -1082,91 +1101,92 @@ var AppModule = /** @class */ (function () {
     }
     AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["NgModule"])({
-            declarations: [_app_component__WEBPACK_IMPORTED_MODULE_11__["AppComponent"], _hotelreviews_hotelreviews_component__WEBPACK_IMPORTED_MODULE_14__["HotelreviewsComponent"], _hotelphotos_hotelphotos_component__WEBPACK_IMPORTED_MODULE_15__["HotelphotosComponent"], _hotelphotos_fullscreenimg_fullscreenimg_component__WEBPACK_IMPORTED_MODULE_16__["FullscreenimgComponent"]],
-            entryComponents: [_hotelphotos_fullscreenimg_fullscreenimg_component__WEBPACK_IMPORTED_MODULE_16__["FullscreenimgComponent"]],
+            declarations: [_app_component__WEBPACK_IMPORTED_MODULE_12__["AppComponent"], _hotelreviews_hotelreviews_component__WEBPACK_IMPORTED_MODULE_15__["HotelreviewsComponent"], _hotelphotos_hotelphotos_component__WEBPACK_IMPORTED_MODULE_16__["HotelphotosComponent"], _hotelphotos_fullscreenimg_fullscreenimg_component__WEBPACK_IMPORTED_MODULE_17__["FullscreenimgComponent"]],
+            entryComponents: [_hotelphotos_fullscreenimg_fullscreenimg_component__WEBPACK_IMPORTED_MODULE_17__["FullscreenimgComponent"]],
             imports: [
                 _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormsModule"],
-                _angular_platform_browser__WEBPACK_IMPORTED_MODULE_3__["BrowserModule"], _ionic_angular__WEBPACK_IMPORTED_MODULE_8__["IonicModule"].forRoot(), _app_routing_module__WEBPACK_IMPORTED_MODULE_12__["AppRoutingModule"], _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_13__["BrowserAnimationsModule"], _angular_material__WEBPACK_IMPORTED_MODULE_7__["MatAutocompleteModule"],
+                _angular_platform_browser__WEBPACK_IMPORTED_MODULE_3__["BrowserModule"], _ionic_angular__WEBPACK_IMPORTED_MODULE_9__["IonicModule"].forRoot(), _app_routing_module__WEBPACK_IMPORTED_MODULE_13__["AppRoutingModule"], _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_14__["BrowserAnimationsModule"], _angular_material__WEBPACK_IMPORTED_MODULE_8__["MatAutocompleteModule"],
                 _angular_common_http__WEBPACK_IMPORTED_MODULE_5__["HttpClientModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_7__["MatBadgeModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_7__["MatBottomSheetModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_7__["MatButtonModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_7__["MatButtonToggleModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_7__["MatCardModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_7__["MatCheckboxModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_7__["MatChipsModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_7__["MatDatepickerModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_7__["MatDialogModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_7__["MatDividerModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_7__["MatExpansionModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_7__["MatFormFieldModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_7__["MatGridListModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_7__["MatIconModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_7__["MatInputModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_7__["MatListModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_7__["MatMenuModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_7__["MatPaginatorModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_7__["MatProgressBarModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_7__["MatProgressSpinnerModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_7__["MatRadioModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_7__["MatRippleModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_7__["MatSelectModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_7__["MatSidenavModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_7__["MatSlideToggleModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_7__["MatSliderModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_7__["MatSnackBarModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_7__["MatSortModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_7__["MatStepperModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_7__["MatTableModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_7__["MatTabsModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_7__["MatToolbarModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_7__["MatTooltipModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_7__["MatTreeModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_8__["MatBadgeModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_8__["MatBottomSheetModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_8__["MatButtonModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_8__["MatButtonToggleModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_8__["MatCardModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_8__["MatCheckboxModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_8__["MatChipsModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_8__["MatDatepickerModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_8__["MatDialogModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_8__["MatDividerModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_8__["MatExpansionModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_8__["MatFormFieldModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_8__["MatGridListModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_8__["MatIconModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_8__["MatInputModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_8__["MatListModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_8__["MatMenuModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_8__["MatPaginatorModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_8__["MatProgressBarModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_8__["MatProgressSpinnerModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_8__["MatRadioModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_8__["MatRippleModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_8__["MatSelectModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_8__["MatSidenavModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_8__["MatSlideToggleModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_8__["MatSliderModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_8__["MatSnackBarModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_8__["MatSortModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_8__["MatStepperModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_8__["MatTableModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_8__["MatTabsModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_8__["MatToolbarModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_8__["MatTooltipModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_8__["MatTreeModule"],
             ],
             exports: [
-                _angular_material__WEBPACK_IMPORTED_MODULE_7__["MatAutocompleteModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_7__["MatBadgeModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_7__["MatBottomSheetModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_7__["MatButtonModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_7__["MatButtonToggleModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_7__["MatCardModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_7__["MatCheckboxModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_7__["MatChipsModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_7__["MatDatepickerModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_7__["MatDialogModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_7__["MatDividerModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_7__["MatExpansionModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_7__["MatFormFieldModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_7__["MatGridListModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_7__["MatIconModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_7__["MatInputModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_7__["MatListModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_7__["MatMenuModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_7__["MatPaginatorModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_7__["MatProgressBarModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_7__["MatProgressSpinnerModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_7__["MatRadioModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_7__["MatRippleModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_7__["MatSelectModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_7__["MatSidenavModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_7__["MatSlideToggleModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_7__["MatSliderModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_7__["MatSnackBarModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_7__["MatSortModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_7__["MatStepperModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_7__["MatTableModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_7__["MatTabsModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_7__["MatToolbarModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_7__["MatTooltipModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_7__["MatTreeModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_8__["MatAutocompleteModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_8__["MatBadgeModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_8__["MatBottomSheetModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_8__["MatButtonModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_8__["MatButtonToggleModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_8__["MatCardModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_8__["MatCheckboxModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_8__["MatChipsModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_8__["MatDatepickerModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_8__["MatDialogModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_8__["MatDividerModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_8__["MatExpansionModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_8__["MatFormFieldModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_8__["MatGridListModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_8__["MatIconModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_8__["MatInputModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_8__["MatListModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_8__["MatMenuModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_8__["MatPaginatorModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_8__["MatProgressBarModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_8__["MatProgressSpinnerModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_8__["MatRadioModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_8__["MatRippleModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_8__["MatSelectModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_8__["MatSidenavModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_8__["MatSlideToggleModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_8__["MatSliderModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_8__["MatSnackBarModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_8__["MatSortModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_8__["MatStepperModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_8__["MatTableModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_8__["MatTabsModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_8__["MatToolbarModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_8__["MatTooltipModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_8__["MatTreeModule"],
             ],
             providers: [
-                _ionic_native_status_bar_ngx__WEBPACK_IMPORTED_MODULE_10__["StatusBar"],
-                _ionic_native_splash_screen_ngx__WEBPACK_IMPORTED_MODULE_9__["SplashScreen"],
+                _ionic_native_status_bar_ngx__WEBPACK_IMPORTED_MODULE_11__["StatusBar"],
+                _ionic_native_splash_screen_ngx__WEBPACK_IMPORTED_MODULE_10__["SplashScreen"],
                 _ionic_native_photo_viewer_ngx__WEBPACK_IMPORTED_MODULE_6__["PhotoViewer"],
-                { provide: _angular_router__WEBPACK_IMPORTED_MODULE_4__["RouteReuseStrategy"], useClass: _ionic_angular__WEBPACK_IMPORTED_MODULE_8__["IonicRouteStrategy"] }
+                _ionic_native_google_plus_ngx__WEBPACK_IMPORTED_MODULE_7__["GooglePlus"],
+                { provide: _angular_router__WEBPACK_IMPORTED_MODULE_4__["RouteReuseStrategy"], useClass: _ionic_angular__WEBPACK_IMPORTED_MODULE_9__["IonicRouteStrategy"] }
             ],
-            bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_11__["AppComponent"]]
+            bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_12__["AppComponent"]]
         })
     ], AppModule);
     return AppModule;

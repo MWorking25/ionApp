@@ -47,6 +47,14 @@ module.exports = [
     "clobbers": [
       "PhotoViewer"
     ]
+  },
+  {
+    "id": "cordova-plugin-googleplus.GooglePlus",
+    "file": "plugins/cordova-plugin-googleplus/www/GooglePlus.js",
+    "pluginId": "cordova-plugin-googleplus",
+    "clobbers": [
+      "window.plugins.googleplus"
+    ]
   }
 ];
 module.exports.metadata = 
@@ -58,7 +66,8 @@ module.exports.metadata =
   "cordova-plugin-splashscreen": "5.0.2",
   "cordova-plugin-ionic-webview": "3.1.2",
   "cordova-plugin-ionic-keyboard": "2.1.3",
-  "com-sarriaroman-photoviewer": "1.2.1"
+  "com-sarriaroman-photoviewer": "1.2.1",
+  "cordova-plugin-googleplus": "7.0.1"
 };
 // BOTTOM OF METADATA
 });

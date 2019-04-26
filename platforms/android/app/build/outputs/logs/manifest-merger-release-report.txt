@@ -1,15 +1,33 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\Mayur 23-7-18\2019\IONIC\application\platforms\android\app\src\main\AndroidManifest.xml:2:1-17:12
-INJECTED from D:\Mayur 23-7-18\2019\IONIC\application\platforms\android\app\src\main\AndroidManifest.xml:2:1-17:12
-INJECTED from D:\Mayur 23-7-18\2019\IONIC\application\platforms\android\app\src\main\AndroidManifest.xml:2:1-17:12
-INJECTED from D:\Mayur 23-7-18\2019\IONIC\application\platforms\android\app\src\main\AndroidManifest.xml:2:1-17:12
+ADDED from D:\Mayur 23-7-18\2019\IONIC\application\platforms\android\app\src\main\AndroidManifest.xml:2:1-19:12
+INJECTED from D:\Mayur 23-7-18\2019\IONIC\application\platforms\android\app\src\main\AndroidManifest.xml:2:1-19:12
+INJECTED from D:\Mayur 23-7-18\2019\IONIC\application\platforms\android\app\src\main\AndroidManifest.xml:2:1-19:12
+INJECTED from D:\Mayur 23-7-18\2019\IONIC\application\platforms\android\app\src\main\AndroidManifest.xml:2:1-19:12
 MERGED from [com.commit451:PhotoView:1.2.4] C:\Users\Mayur.Mhatre\.gradle\caches\transforms-1\files-1.1\PhotoView-1.2.4.aar\ab35be5e60a610fe7852ac014703a31f\AndroidManifest.xml:2:1-12:12
-MERGED from [com.android.support:support-v4:23.0.1] C:\Users\Mayur.Mhatre\.gradle\caches\transforms-1\files-1.1\support-v4-23.0.1.aar\398b4143ad91c68c3b6993cc6adfa205\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-auth:11.8.0] C:\Users\Mayur.Mhatre\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.8.0.aar\a2f7c11e786786d18966b5d87ba6ebdf\AndroidManifest.xml:17:1-39:12
+MERGED from [com.google.android.gms:play-services-identity:11.8.0] C:\Users\Mayur.Mhatre\.gradle\caches\transforms-1\files-1.1\play-services-identity-11.8.0.aar\531e8ea3425e7aeeb86a5662f7ecfc0b\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-auth-api-phone:11.8.0] C:\Users\Mayur.Mhatre\.gradle\caches\transforms-1\files-1.1\play-services-auth-api-phone-11.8.0.aar\cc9e1518d703a9646be89bd5d264b72c\AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.android.gms:play-services-auth-base:11.8.0] C:\Users\Mayur.Mhatre\.gradle\caches\transforms-1\files-1.1\play-services-auth-base-11.8.0.aar\abe64bb2b9429b2cf5dcac2cb7ccb2eb\AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.android.gms:play-services-base:11.8.0] C:\Users\Mayur.Mhatre\.gradle\caches\transforms-1\files-1.1\play-services-base-11.8.0.aar\68fe81e71e3409618d4dcef69f19b161\AndroidManifest.xml:17:1-29:12
+MERGED from [com.google.android.gms:play-services-tasks:11.8.0] C:\Users\Mayur.Mhatre\.gradle\caches\transforms-1\files-1.1\play-services-tasks-11.8.0.aar\a86f2e80b50f25ec7b451ddbfef09742\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-basement:11.8.0] C:\Users\Mayur.Mhatre\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.8.0.aar\3819a322b9ffde9ded19a9e0cc8e0f84\AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-v4:25.2.0] C:\Users\Mayur.Mhatre\.gradle\caches\transforms-1\files-1.1\support-v4-25.2.0.aar\07def20df30d1a82bf106ffe13ca54f5\AndroidManifest.xml:17:1-27:12
+MERGED from [com.android.support:support-fragment:25.2.0] C:\Users\Mayur.Mhatre\.gradle\caches\transforms-1\files-1.1\support-fragment-25.2.0.aar\24fd0c99cb13f522b52165a394c29e26\AndroidManifest.xml:17:1-27:12
+MERGED from [com.android.support:support-media-compat:25.2.0] C:\Users\Mayur.Mhatre\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.2.0.aar\a868cbfdd290cb6cd324daecce755bf4\AndroidManifest.xml:17:1-27:12
+MERGED from [com.android.support:support-core-utils:25.2.0] C:\Users\Mayur.Mhatre\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.2.0.aar\ca0e0fb5f614d991ef0a2bc489c62482\AndroidManifest.xml:17:1-27:12
+MERGED from [com.android.support:support-core-ui:25.2.0] C:\Users\Mayur.Mhatre\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.2.0.aar\87e5e81a0113c6de691debc33a64a998\AndroidManifest.xml:17:1-27:12
+MERGED from [com.android.support:support-compat:25.2.0] C:\Users\Mayur.Mhatre\.gradle\caches\transforms-1\files-1.1\support-compat-25.2.0.aar\9873338be0b9562053ddaa1b211a9613\AndroidManifest.xml:17:1-27:12
 MERGED from [:CordovaLib] D:\Mayur 23-7-18\2019\IONIC\application\platforms\android\CordovaLib\build\intermediates\manifests\full\release\AndroidManifest.xml:20:1-27:12
-INJECTED from D:\Mayur 23-7-18\2019\IONIC\application\platforms\android\app\src\main\AndroidManifest.xml:2:1-17:12
-INJECTED from D:\Mayur 23-7-18\2019\IONIC\application\platforms\android\app\src\main\AndroidManifest.xml:2:1-17:12
-INJECTED from D:\Mayur 23-7-18\2019\IONIC\application\platforms\android\app\src\main\AndroidManifest.xml:2:1-17:12
+MERGED from [com.google.android.gms:play-services-identity-license:11.8.0] C:\Users\Mayur.Mhatre\.gradle\caches\transforms-1\files-1.1\play-services-identity-license-11.8.0.aar\31d59d01136300f4e46a47ab707a415f\AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.android.gms:play-services-auth-api-phone-license:11.8.0] C:\Users\Mayur.Mhatre\.gradle\caches\transforms-1\files-1.1\play-services-auth-api-phone-license-11.8.0.aar\09192a152c883c91e6ab08e4ec1665a2\AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.android.gms:play-services-auth-base-license:11.8.0] C:\Users\Mayur.Mhatre\.gradle\caches\transforms-1\files-1.1\play-services-auth-base-license-11.8.0.aar\f38e0db2a248c72d3029b87a17e64e7b\AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.android.gms:play-services-base-license:11.8.0] C:\Users\Mayur.Mhatre\.gradle\caches\transforms-1\files-1.1\play-services-base-license-11.8.0.aar\987f2cf7c2ca31112ed7a15cf190a71c\AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.android.gms:play-services-basement-license:11.8.0] C:\Users\Mayur.Mhatre\.gradle\caches\transforms-1\files-1.1\play-services-basement-license-11.8.0.aar\043ffaa890c93ab73f24748c4eb95f51\AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.android.gms:play-services-tasks-license:11.8.0] C:\Users\Mayur.Mhatre\.gradle\caches\transforms-1\files-1.1\play-services-tasks-license-11.8.0.aar\fea63728d1e5f9b5b44709a8fd6d4d73\AndroidManifest.xml:2:1-6:12
+INJECTED from D:\Mayur 23-7-18\2019\IONIC\application\platforms\android\app\src\main\AndroidManifest.xml:2:1-19:12
+INJECTED from D:\Mayur 23-7-18\2019\IONIC\application\platforms\android\app\src\main\AndroidManifest.xml:2:1-19:12
+INJECTED from D:\Mayur 23-7-18\2019\IONIC\application\platforms\android\app\src\main\AndroidManifest.xml:2:1-19:12
 	package
 		ADDED from D:\Mayur 23-7-18\2019\IONIC\application\platforms\android\app\src\main\AndroidManifest.xml:2:98-124
 		INJECTED from D:\Mayur 23-7-18\2019\IONIC\application\platforms\android\app\src\main\AndroidManifest.xml
@@ -46,8 +64,40 @@ ADDED from D:\Mayur 23-7-18\2019\IONIC\application\platforms\android\app\src\mai
 		ADDED from D:\Mayur 23-7-18\2019\IONIC\application\platforms\android\app\src\main\AndroidManifest.xml:4:22-64
 application
 ADDED from D:\Mayur 23-7-18\2019\IONIC\application\platforms\android\app\src\main\AndroidManifest.xml:5:5-13:19
-MERGED from [com.android.support:support-v4:23.0.1] C:\Users\Mayur.Mhatre\.gradle\caches\transforms-1\files-1.1\support-v4-23.0.1.aar\398b4143ad91c68c3b6993cc6adfa205\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-v4:23.0.1] C:\Users\Mayur.Mhatre\.gradle\caches\transforms-1\files-1.1\support-v4-23.0.1.aar\398b4143ad91c68c3b6993cc6adfa205\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-auth:11.8.0] C:\Users\Mayur.Mhatre\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.8.0.aar\a2f7c11e786786d18966b5d87ba6ebdf\AndroidManifest.xml:22:5-37:19
+MERGED from [com.google.android.gms:play-services-auth:11.8.0] C:\Users\Mayur.Mhatre\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.8.0.aar\a2f7c11e786786d18966b5d87ba6ebdf\AndroidManifest.xml:22:5-37:19
+MERGED from [com.google.android.gms:play-services-identity:11.8.0] C:\Users\Mayur.Mhatre\.gradle\caches\transforms-1\files-1.1\play-services-identity-11.8.0.aar\531e8ea3425e7aeeb86a5662f7ecfc0b\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-identity:11.8.0] C:\Users\Mayur.Mhatre\.gradle\caches\transforms-1\files-1.1\play-services-identity-11.8.0.aar\531e8ea3425e7aeeb86a5662f7ecfc0b\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-base:11.8.0] C:\Users\Mayur.Mhatre\.gradle\caches\transforms-1\files-1.1\play-services-base-11.8.0.aar\68fe81e71e3409618d4dcef69f19b161\AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-base:11.8.0] C:\Users\Mayur.Mhatre\.gradle\caches\transforms-1\files-1.1\play-services-base-11.8.0.aar\68fe81e71e3409618d4dcef69f19b161\AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-tasks:11.8.0] C:\Users\Mayur.Mhatre\.gradle\caches\transforms-1\files-1.1\play-services-tasks-11.8.0.aar\a86f2e80b50f25ec7b451ddbfef09742\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:11.8.0] C:\Users\Mayur.Mhatre\.gradle\caches\transforms-1\files-1.1\play-services-tasks-11.8.0.aar\a86f2e80b50f25ec7b451ddbfef09742\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-basement:11.8.0] C:\Users\Mayur.Mhatre\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.8.0.aar\3819a322b9ffde9ded19a9e0cc8e0f84\AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:11.8.0] C:\Users\Mayur.Mhatre\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.8.0.aar\3819a322b9ffde9ded19a9e0cc8e0f84\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-v4:25.2.0] C:\Users\Mayur.Mhatre\.gradle\caches\transforms-1\files-1.1\support-v4-25.2.0.aar\07def20df30d1a82bf106ffe13ca54f5\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-v4:25.2.0] C:\Users\Mayur.Mhatre\.gradle\caches\transforms-1\files-1.1\support-v4-25.2.0.aar\07def20df30d1a82bf106ffe13ca54f5\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-fragment:25.2.0] C:\Users\Mayur.Mhatre\.gradle\caches\transforms-1\files-1.1\support-fragment-25.2.0.aar\24fd0c99cb13f522b52165a394c29e26\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-fragment:25.2.0] C:\Users\Mayur.Mhatre\.gradle\caches\transforms-1\files-1.1\support-fragment-25.2.0.aar\24fd0c99cb13f522b52165a394c29e26\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-media-compat:25.2.0] C:\Users\Mayur.Mhatre\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.2.0.aar\a868cbfdd290cb6cd324daecce755bf4\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-media-compat:25.2.0] C:\Users\Mayur.Mhatre\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.2.0.aar\a868cbfdd290cb6cd324daecce755bf4\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-utils:25.2.0] C:\Users\Mayur.Mhatre\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.2.0.aar\ca0e0fb5f614d991ef0a2bc489c62482\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-utils:25.2.0] C:\Users\Mayur.Mhatre\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.2.0.aar\ca0e0fb5f614d991ef0a2bc489c62482\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-ui:25.2.0] C:\Users\Mayur.Mhatre\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.2.0.aar\87e5e81a0113c6de691debc33a64a998\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-ui:25.2.0] C:\Users\Mayur.Mhatre\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.2.0.aar\87e5e81a0113c6de691debc33a64a998\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-compat:25.2.0] C:\Users\Mayur.Mhatre\.gradle\caches\transforms-1\files-1.1\support-compat-25.2.0.aar\9873338be0b9562053ddaa1b211a9613\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-compat:25.2.0] C:\Users\Mayur.Mhatre\.gradle\caches\transforms-1\files-1.1\support-compat-25.2.0.aar\9873338be0b9562053ddaa1b211a9613\AndroidManifest.xml:25:5-20
+MERGED from [com.google.android.gms:play-services-identity-license:11.8.0] C:\Users\Mayur.Mhatre\.gradle\caches\transforms-1\files-1.1\play-services-identity-license-11.8.0.aar\31d59d01136300f4e46a47ab707a415f\AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-identity-license:11.8.0] C:\Users\Mayur.Mhatre\.gradle\caches\transforms-1\files-1.1\play-services-identity-license-11.8.0.aar\31d59d01136300f4e46a47ab707a415f\AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-auth-api-phone-license:11.8.0] C:\Users\Mayur.Mhatre\.gradle\caches\transforms-1\files-1.1\play-services-auth-api-phone-license-11.8.0.aar\09192a152c883c91e6ab08e4ec1665a2\AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-auth-api-phone-license:11.8.0] C:\Users\Mayur.Mhatre\.gradle\caches\transforms-1\files-1.1\play-services-auth-api-phone-license-11.8.0.aar\09192a152c883c91e6ab08e4ec1665a2\AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-auth-base-license:11.8.0] C:\Users\Mayur.Mhatre\.gradle\caches\transforms-1\files-1.1\play-services-auth-base-license-11.8.0.aar\f38e0db2a248c72d3029b87a17e64e7b\AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-auth-base-license:11.8.0] C:\Users\Mayur.Mhatre\.gradle\caches\transforms-1\files-1.1\play-services-auth-base-license-11.8.0.aar\f38e0db2a248c72d3029b87a17e64e7b\AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-base-license:11.8.0] C:\Users\Mayur.Mhatre\.gradle\caches\transforms-1\files-1.1\play-services-base-license-11.8.0.aar\987f2cf7c2ca31112ed7a15cf190a71c\AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-base-license:11.8.0] C:\Users\Mayur.Mhatre\.gradle\caches\transforms-1\files-1.1\play-services-base-license-11.8.0.aar\987f2cf7c2ca31112ed7a15cf190a71c\AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-basement-license:11.8.0] C:\Users\Mayur.Mhatre\.gradle\caches\transforms-1\files-1.1\play-services-basement-license-11.8.0.aar\043ffaa890c93ab73f24748c4eb95f51\AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-basement-license:11.8.0] C:\Users\Mayur.Mhatre\.gradle\caches\transforms-1\files-1.1\play-services-basement-license-11.8.0.aar\043ffaa890c93ab73f24748c4eb95f51\AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-tasks-license:11.8.0] C:\Users\Mayur.Mhatre\.gradle\caches\transforms-1\files-1.1\play-services-tasks-license-11.8.0.aar\fea63728d1e5f9b5b44709a8fd6d4d73\AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-tasks-license:11.8.0] C:\Users\Mayur.Mhatre\.gradle\caches\transforms-1\files-1.1\play-services-tasks-license-11.8.0.aar\fea63728d1e5f9b5b44709a8fd6d4d73\AndroidManifest.xml:5:5-20
 	android:supportsRtl
 		ADDED from D:\Mayur 23-7-18\2019\IONIC\application\platforms\android\app\src\main\AndroidManifest.xml:5:114-140
 	android:label
@@ -93,11 +143,49 @@ ADDED from D:\Mayur 23-7-18\2019\IONIC\application\platforms\android\app\src\mai
 INJECTED from D:\Mayur 23-7-18\2019\IONIC\application\platforms\android\app\src\main\AndroidManifest.xml:14:5-74
 MERGED from [com.commit451:PhotoView:1.2.4] C:\Users\Mayur.Mhatre\.gradle\caches\transforms-1\files-1.1\PhotoView-1.2.4.aar\ab35be5e60a610fe7852ac014703a31f\AndroidManifest.xml:8:5-10:41
 MERGED from [com.commit451:PhotoView:1.2.4] C:\Users\Mayur.Mhatre\.gradle\caches\transforms-1\files-1.1\PhotoView-1.2.4.aar\ab35be5e60a610fe7852ac014703a31f\AndroidManifest.xml:8:5-10:41
-MERGED from [com.android.support:support-v4:23.0.1] C:\Users\Mayur.Mhatre\.gradle\caches\transforms-1\files-1.1\support-v4-23.0.1.aar\398b4143ad91c68c3b6993cc6adfa205\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:support-v4:23.0.1] C:\Users\Mayur.Mhatre\.gradle\caches\transforms-1\files-1.1\support-v4-23.0.1.aar\398b4143ad91c68c3b6993cc6adfa205\AndroidManifest.xml:20:5-43
+MERGED from [com.google.android.gms:play-services-auth:11.8.0] C:\Users\Mayur.Mhatre\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.8.0.aar\a2f7c11e786786d18966b5d87ba6ebdf\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-auth:11.8.0] C:\Users\Mayur.Mhatre\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.8.0.aar\a2f7c11e786786d18966b5d87ba6ebdf\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-identity:11.8.0] C:\Users\Mayur.Mhatre\.gradle\caches\transforms-1\files-1.1\play-services-identity-11.8.0.aar\531e8ea3425e7aeeb86a5662f7ecfc0b\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-identity:11.8.0] C:\Users\Mayur.Mhatre\.gradle\caches\transforms-1\files-1.1\play-services-identity-11.8.0.aar\531e8ea3425e7aeeb86a5662f7ecfc0b\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-auth-api-phone:11.8.0] C:\Users\Mayur.Mhatre\.gradle\caches\transforms-1\files-1.1\play-services-auth-api-phone-11.8.0.aar\cc9e1518d703a9646be89bd5d264b72c\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth-api-phone:11.8.0] C:\Users\Mayur.Mhatre\.gradle\caches\transforms-1\files-1.1\play-services-auth-api-phone-11.8.0.aar\cc9e1518d703a9646be89bd5d264b72c\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth-base:11.8.0] C:\Users\Mayur.Mhatre\.gradle\caches\transforms-1\files-1.1\play-services-auth-base-11.8.0.aar\abe64bb2b9429b2cf5dcac2cb7ccb2eb\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth-base:11.8.0] C:\Users\Mayur.Mhatre\.gradle\caches\transforms-1\files-1.1\play-services-auth-base-11.8.0.aar\abe64bb2b9429b2cf5dcac2cb7ccb2eb\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-base:11.8.0] C:\Users\Mayur.Mhatre\.gradle\caches\transforms-1\files-1.1\play-services-base-11.8.0.aar\68fe81e71e3409618d4dcef69f19b161\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:11.8.0] C:\Users\Mayur.Mhatre\.gradle\caches\transforms-1\files-1.1\play-services-base-11.8.0.aar\68fe81e71e3409618d4dcef69f19b161\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-tasks:11.8.0] C:\Users\Mayur.Mhatre\.gradle\caches\transforms-1\files-1.1\play-services-tasks-11.8.0.aar\a86f2e80b50f25ec7b451ddbfef09742\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:11.8.0] C:\Users\Mayur.Mhatre\.gradle\caches\transforms-1\files-1.1\play-services-tasks-11.8.0.aar\a86f2e80b50f25ec7b451ddbfef09742\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-basement:11.8.0] C:\Users\Mayur.Mhatre\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.8.0.aar\3819a322b9ffde9ded19a9e0cc8e0f84\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:11.8.0] C:\Users\Mayur.Mhatre\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.8.0.aar\3819a322b9ffde9ded19a9e0cc8e0f84\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:25.2.0] C:\Users\Mayur.Mhatre\.gradle\caches\transforms-1\files-1.1\support-v4-25.2.0.aar\07def20df30d1a82bf106ffe13ca54f5\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-v4:25.2.0] C:\Users\Mayur.Mhatre\.gradle\caches\transforms-1\files-1.1\support-v4-25.2.0.aar\07def20df30d1a82bf106ffe13ca54f5\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-fragment:25.2.0] C:\Users\Mayur.Mhatre\.gradle\caches\transforms-1\files-1.1\support-fragment-25.2.0.aar\24fd0c99cb13f522b52165a394c29e26\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-fragment:25.2.0] C:\Users\Mayur.Mhatre\.gradle\caches\transforms-1\files-1.1\support-fragment-25.2.0.aar\24fd0c99cb13f522b52165a394c29e26\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-media-compat:25.2.0] C:\Users\Mayur.Mhatre\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.2.0.aar\a868cbfdd290cb6cd324daecce755bf4\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-media-compat:25.2.0] C:\Users\Mayur.Mhatre\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.2.0.aar\a868cbfdd290cb6cd324daecce755bf4\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-utils:25.2.0] C:\Users\Mayur.Mhatre\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.2.0.aar\ca0e0fb5f614d991ef0a2bc489c62482\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-utils:25.2.0] C:\Users\Mayur.Mhatre\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.2.0.aar\ca0e0fb5f614d991ef0a2bc489c62482\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-ui:25.2.0] C:\Users\Mayur.Mhatre\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.2.0.aar\87e5e81a0113c6de691debc33a64a998\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-ui:25.2.0] C:\Users\Mayur.Mhatre\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.2.0.aar\87e5e81a0113c6de691debc33a64a998\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:25.2.0] C:\Users\Mayur.Mhatre\.gradle\caches\transforms-1\files-1.1\support-compat-25.2.0.aar\9873338be0b9562053ddaa1b211a9613\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:25.2.0] C:\Users\Mayur.Mhatre\.gradle\caches\transforms-1\files-1.1\support-compat-25.2.0.aar\9873338be0b9562053ddaa1b211a9613\AndroidManifest.xml:21:5-23:58
 MERGED from [:CordovaLib] D:\Mayur 23-7-18\2019\IONIC\application\platforms\android\CordovaLib\build\intermediates\manifests\full\release\AndroidManifest.xml:25:5-44
 MERGED from [:CordovaLib] D:\Mayur 23-7-18\2019\IONIC\application\platforms\android\CordovaLib\build\intermediates\manifests\full\release\AndroidManifest.xml:25:5-44
+MERGED from [com.google.android.gms:play-services-identity-license:11.8.0] C:\Users\Mayur.Mhatre\.gradle\caches\transforms-1\files-1.1\play-services-identity-license-11.8.0.aar\31d59d01136300f4e46a47ab707a415f\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-identity-license:11.8.0] C:\Users\Mayur.Mhatre\.gradle\caches\transforms-1\files-1.1\play-services-identity-license-11.8.0.aar\31d59d01136300f4e46a47ab707a415f\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-auth-api-phone-license:11.8.0] C:\Users\Mayur.Mhatre\.gradle\caches\transforms-1\files-1.1\play-services-auth-api-phone-license-11.8.0.aar\09192a152c883c91e6ab08e4ec1665a2\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-auth-api-phone-license:11.8.0] C:\Users\Mayur.Mhatre\.gradle\caches\transforms-1\files-1.1\play-services-auth-api-phone-license-11.8.0.aar\09192a152c883c91e6ab08e4ec1665a2\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-auth-base-license:11.8.0] C:\Users\Mayur.Mhatre\.gradle\caches\transforms-1\files-1.1\play-services-auth-base-license-11.8.0.aar\f38e0db2a248c72d3029b87a17e64e7b\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-auth-base-license:11.8.0] C:\Users\Mayur.Mhatre\.gradle\caches\transforms-1\files-1.1\play-services-auth-base-license-11.8.0.aar\f38e0db2a248c72d3029b87a17e64e7b\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-base-license:11.8.0] C:\Users\Mayur.Mhatre\.gradle\caches\transforms-1\files-1.1\play-services-base-license-11.8.0.aar\987f2cf7c2ca31112ed7a15cf190a71c\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-base-license:11.8.0] C:\Users\Mayur.Mhatre\.gradle\caches\transforms-1\files-1.1\play-services-base-license-11.8.0.aar\987f2cf7c2ca31112ed7a15cf190a71c\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-basement-license:11.8.0] C:\Users\Mayur.Mhatre\.gradle\caches\transforms-1\files-1.1\play-services-basement-license-11.8.0.aar\043ffaa890c93ab73f24748c4eb95f51\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-basement-license:11.8.0] C:\Users\Mayur.Mhatre\.gradle\caches\transforms-1\files-1.1\play-services-basement-license-11.8.0.aar\043ffaa890c93ab73f24748c4eb95f51\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-tasks-license:11.8.0] C:\Users\Mayur.Mhatre\.gradle\caches\transforms-1\files-1.1\play-services-tasks-license-11.8.0.aar\fea63728d1e5f9b5b44709a8fd6d4d73\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-tasks-license:11.8.0] C:\Users\Mayur.Mhatre\.gradle\caches\transforms-1\files-1.1\play-services-tasks-license-11.8.0.aar\fea63728d1e5f9b5b44709a8fd6d4d73\AndroidManifest.xml:4:5-43
 INJECTED from D:\Mayur 23-7-18\2019\IONIC\application\platforms\android\app\src\main\AndroidManifest.xml:14:5-74
+	tools:overrideLibrary
+		ADDED from [com.android.support:support-v4:25.2.0] C:\Users\Mayur.Mhatre\.gradle\caches\transforms-1\files-1.1\support-v4-25.2.0.aar\07def20df30d1a82bf106ffe13ca54f5\AndroidManifest.xml:23:9-51
 	android:targetSdkVersion
 		ADDED from D:\Mayur 23-7-18\2019\IONIC\application\platforms\android\app\src\main\AndroidManifest.xml:14:42-71
 	android:minSdkVersion
@@ -112,3 +200,43 @@ uses-permission#android.permission.READ_EXTERNAL_STORAGE
 ADDED from D:\Mayur 23-7-18\2019\IONIC\application\platforms\android\app\src\main\AndroidManifest.xml:16:5-80
 	android:name
 		ADDED from D:\Mayur 23-7-18\2019\IONIC\application\platforms\android\app\src\main\AndroidManifest.xml:16:22-77
+uses-permission#android.permission.GET_ACCOUNTS
+ADDED from D:\Mayur 23-7-18\2019\IONIC\application\platforms\android\app\src\main\AndroidManifest.xml:17:5-71
+	android:name
+		ADDED from D:\Mayur 23-7-18\2019\IONIC\application\platforms\android\app\src\main\AndroidManifest.xml:17:22-68
+uses-permission#android.permission.USE_CREDENTIALS
+ADDED from D:\Mayur 23-7-18\2019\IONIC\application\platforms\android\app\src\main\AndroidManifest.xml:18:5-74
+	android:name
+		ADDED from D:\Mayur 23-7-18\2019\IONIC\application\platforms\android\app\src\main\AndroidManifest.xml:18:22-71
+activity#com.google.android.gms.auth.api.signin.internal.SignInHubActivity
+ADDED from [com.google.android.gms:play-services-auth:11.8.0] C:\Users\Mayur.Mhatre\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.8.0.aar\a2f7c11e786786d18966b5d87ba6ebdf\AndroidManifest.xml:23:9-27:75
+	android:excludeFromRecents
+		ADDED from [com.google.android.gms:play-services-auth:11.8.0] C:\Users\Mayur.Mhatre\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.8.0.aar\a2f7c11e786786d18966b5d87ba6ebdf\AndroidManifest.xml:25:13-46
+	android:exported
+		ADDED from [com.google.android.gms:play-services-auth:11.8.0] C:\Users\Mayur.Mhatre\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.8.0.aar\a2f7c11e786786d18966b5d87ba6ebdf\AndroidManifest.xml:26:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-auth:11.8.0] C:\Users\Mayur.Mhatre\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.8.0.aar\a2f7c11e786786d18966b5d87ba6ebdf\AndroidManifest.xml:27:13-72
+	android:name
+		ADDED from [com.google.android.gms:play-services-auth:11.8.0] C:\Users\Mayur.Mhatre\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.8.0.aar\a2f7c11e786786d18966b5d87ba6ebdf\AndroidManifest.xml:24:13-93
+service#com.google.android.gms.auth.api.signin.RevocationBoundService
+ADDED from [com.google.android.gms:play-services-auth:11.8.0] C:\Users\Mayur.Mhatre\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.8.0.aar\a2f7c11e786786d18966b5d87ba6ebdf\AndroidManifest.xml:33:9-36:110
+	android:exported
+		ADDED from [com.google.android.gms:play-services-auth:11.8.0] C:\Users\Mayur.Mhatre\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.8.0.aar\a2f7c11e786786d18966b5d87ba6ebdf\AndroidManifest.xml:35:13-36
+	android:permission
+		ADDED from [com.google.android.gms:play-services-auth:11.8.0] C:\Users\Mayur.Mhatre\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.8.0.aar\a2f7c11e786786d18966b5d87ba6ebdf\AndroidManifest.xml:36:13-107
+	android:name
+		ADDED from [com.google.android.gms:play-services-auth:11.8.0] C:\Users\Mayur.Mhatre\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.8.0.aar\a2f7c11e786786d18966b5d87ba6ebdf\AndroidManifest.xml:34:13-89
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:11.8.0] C:\Users\Mayur.Mhatre\.gradle\caches\transforms-1\files-1.1\play-services-base-11.8.0.aar\68fe81e71e3409618d4dcef69f19b161\AndroidManifest.xml:23:9-26:75
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:11.8.0] C:\Users\Mayur.Mhatre\.gradle\caches\transforms-1\files-1.1\play-services-base-11.8.0.aar\68fe81e71e3409618d4dcef69f19b161\AndroidManifest.xml:25:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:11.8.0] C:\Users\Mayur.Mhatre\.gradle\caches\transforms-1\files-1.1\play-services-base-11.8.0.aar\68fe81e71e3409618d4dcef69f19b161\AndroidManifest.xml:26:13-72
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:11.8.0] C:\Users\Mayur.Mhatre\.gradle\caches\transforms-1\files-1.1\play-services-base-11.8.0.aar\68fe81e71e3409618d4dcef69f19b161\AndroidManifest.xml:24:13-79
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:11.8.0] C:\Users\Mayur.Mhatre\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.8.0.aar\3819a322b9ffde9ded19a9e0cc8e0f84\AndroidManifest.xml:23:9-25:69
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:11.8.0] C:\Users\Mayur.Mhatre\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.8.0.aar\3819a322b9ffde9ded19a9e0cc8e0f84\AndroidManifest.xml:25:13-66
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:11.8.0] C:\Users\Mayur.Mhatre\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.8.0.aar\3819a322b9ffde9ded19a9e0cc8e0f84\AndroidManifest.xml:24:13-58
